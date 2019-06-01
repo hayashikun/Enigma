@@ -52,7 +52,7 @@ export class Enigma {
 export class AlphabetEnigma extends Enigma {
     static readonly alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_?";
 
-    constructor(rotorPositions: Char[], reflectorConfiguration: Char[][]) {
+    constructor(rotorPositions: Char[], reflectorConfiguration: Char[][] = AlphabetEnigmaDefaultReflectorConfiguration) {
         super(rotorPositions, reflectorConfiguration, AlphabetEnigma.alphabet.length)
     }
 
@@ -65,3 +65,6 @@ export class AlphabetEnigma extends Enigma {
         return chars.map(c => AlphabetEnigma.alphabet.charAt(c)).join("");
     }
 }
+
+export const AlphabetEnigmaDefaultReflectorConfiguration: Char[][] = Array.from({length: AlphabetEnigma.alphabet.length / 2},
+    (_, k) => k).map(i => [i, AlphabetEnigma.alphabet.length - 1 - i]);

@@ -8,9 +8,7 @@ class Encoder extends React.Component {
         encoderConfiguration: ["A", "A", "A"],
     };
 
-    enigma = new AlphabetEnigma([0, 0, 0],
-        Array.from({length: AlphabetEnigma.alphabet.length / 2},
-            (_, k) => k).map(i => [i, AlphabetEnigma.alphabet.length - 1 - i]));
+    enigma = new AlphabetEnigma([0, 0, 0]);
 
     chars = Array.from({length: AlphabetEnigma.alphabet.length},
         (_, k) => AlphabetEnigma.alphabet.charAt(k));
