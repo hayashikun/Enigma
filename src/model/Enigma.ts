@@ -50,7 +50,7 @@ export class Enigma {
 }
 
 export class AlphabetEnigma extends Enigma {
-    static readonly alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_?";
+    static readonly alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     constructor(rotorPositions: Char[], reflectorConfiguration: Char[][] = AlphabetEnigmaDefaultReflectorConfiguration) {
         super(rotorPositions, reflectorConfiguration, AlphabetEnigma.alphabet.length)

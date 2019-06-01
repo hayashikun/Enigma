@@ -15,7 +15,6 @@ class Encoder extends React.Component {
 
 
     encode(str: string) {
-        str = str.replace(" ", "_");
         str = Array.from({length: str.length},
             (_, k) => str.charAt(k).toUpperCase()).filter(s => this.chars.indexOf(s) >= 0).join("");
         this.setState({plain: str});
