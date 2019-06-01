@@ -1,33 +1,84 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
+
+.Encoder {
+    margin: 36px;
+}
+
+.Encoder h2 {
+    margin: 8px;
+}
+
+.encoder-configurations {
+    margin: 12px auto;
+}
+
+.encoder-configurations-title {
+    margin: 8px;
+    font-size: 20px;
+}
+
+.encoder-configurations label {
+    margin-left: 8px;
+    font-size: 20px;
+
+}
+
+.encoder-configurations input {
+    width: 36px;
+    margin-left: 6px;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.encoder-input label {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.encoder-input input {
+    width: 400px;
+    margin-left: 6px;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.encoder-output-text {
+    font-size: 20px;
+}
+
+.encoder-output-text {
+    font-weight: bold;
+}
+

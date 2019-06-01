@@ -15,7 +15,13 @@ export class Enigma {
         this.numberOfChars = numberOfChars;
     }
 
-    resetPosition() {
+    resetPosition(rotorPositions: Char[] | null) {
+        if (rotorPositions) {
+            if (this.rotorPositions.length !== rotorPositions.length) {
+                throw Error();
+            }
+            this.rotorPositions = rotorPositions;
+        }
         this.currentPosition = 0;
     }
 
