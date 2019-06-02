@@ -9,10 +9,7 @@ class Encoder extends React.Component {
     };
 
     enigma = new AlphabetEnigma([0, 0, 0]);
-
-    chars = Array.from({length: AlphabetEnigma.alphabet.length},
-        (_, k) => AlphabetEnigma.alphabet.charAt(k));
-
+    chars = Array.from(AlphabetEnigma.alphabet);
 
     encode(str: string) {
         str = Array.from({length: str.length},
@@ -42,7 +39,6 @@ class Encoder extends React.Component {
                 <h2>Encoder</h2>
                 <div>
                     <div className={"encoder-configurations"}>
-                        <div className={"encoder-configurations-title"}>Configurations:</div>
                         <div>
                             <label htmlFor={"R1-Configuration"}>R1:</label>
                             <input id={"R1-Configuration"} value={this.state.encoderConfiguration[0]}

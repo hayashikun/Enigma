@@ -33,7 +33,7 @@
 }
 
 .Encoder {
-    margin: 36px;
+    margin: 24px;
 }
 
 .Encoder h2 {
@@ -42,11 +42,6 @@
 
 .encoder-configurations {
     margin: 12px auto;
-}
-
-.encoder-configurations-title {
-    margin: 8px;
-    font-size: 20px;
 }
 
 .encoder-configurations label {
@@ -74,6 +69,10 @@
     font-size: 20px;
 }
 
+.encoder-output {
+    font-size: 20px;
+}
+
 .encoder-output-text {
     font-size: 20px;
 }
@@ -82,3 +81,40 @@
     font-weight: bold;
 }
 
+.Rotors {
+    margin: 24px 0;
+}
+
+.Rotors h2 {
+    margin: 8px;
+}
+
+.rotor {
+    margin: 12px 10px
+}
+
+.rotor-position {
+    font-size: 20px;
+}
+
+.rotor-rotate-button {
+    font-size: 20px;
+    width: 48px;
+    height: 32px;
+    margin: 4px;
+}
+
+.alphabet-input-button {
+    font-size: 20px;
+    width: 48px;
+    height: 32px;
+    margin: 4px;
+}
+
+.alphabet-input-button-selected {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.alphabet-output-button-selected {
+    background: rgba(0, 255, 0, 0.5);
+}
