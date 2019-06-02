@@ -187,9 +187,9 @@ export default class Rotor extends React.Component<RotorProps> {
     render() {
         return (
             <div className="rotor">
-                <div className={"rotor-position"}>{this.state.rotorPosition}</div>
-                <button className={"rotor-rotate-button"} onClick={() => this.rotate(+1)}>+1</button>
-                <button className={"rotor-rotate-button"} onClick={() => this.rotate(-1)}>-1</button>
+                <div className={"rotor-position"}>{this.props.chars[this.state.rotorPosition]} ({this.state.rotorPosition})</div>
+                <button className={"rotor-rotate-button"} onClick={() => this.rotate(+1)}>+</button>
+                <button className={"rotor-rotate-button"} onClick={() => this.rotate(-1)}>-</button>
 
                 <div style={{
                     position: "relative",

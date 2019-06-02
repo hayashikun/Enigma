@@ -97,6 +97,7 @@ export default class Reflector extends React.Component<ReflectorProps> {
     render() {
         return (
             <div className="Reflector">
+                <h3>Reflector</h3>
                 <div style={{
                     position: "relative",
                     width: this.props.width,
